@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="mygraphicsview" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>691</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionxingjian"/>
+    <addaction name="actiondakai"/>
+    <addaction name="actionbaocun"/>
+   </widget>
+   <widget class="QMenu" name="menuDraw">
+    <property name="title">
+     <string>Draw</string>
+    </property>
+    <addaction name="actionxianduan"/>
+    <addaction name="actionPolyline"/>
+    <addaction name="actiontuoyuan"/>
+    <addaction name="actionjuxing"/>
+    <addaction name="actionpolygon"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionpingyi"/>
+    <addaction name="actiongaise"/>
+    <addaction name="actionxuanze_2"/>
+    <addaction name="actionDelete"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuDraw"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionxingjian">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actiondakai">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionbaocun">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionxianduan">
+   <property name="text">
+    <string>线段</string>
+   </property>
+  </action>
+  <action name="actionPolyline">
+   <property name="text">
+    <string>Polyline</string>
+   </property>
+  </action>
+  <action name="actionxuanze">
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </action>
+  <action name="actionpingyi">
+   <property name="text">
+    <string>平移</string>
+   </property>
+  </action>
+  <action name="actiongaise">
+   <property name="text">
+    <string>改色</string>
+   </property>
+  </action>
+  <action name="actiontuoyuan">
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="actionjuxing">
+   <property name="text">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="actionpolygon">
+   <property name="text">
+    <string>polygon</string>
+   </property>
+  </action>
+  <action name="actionxuanze_2">
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>mygraphicsview</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">mygraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
